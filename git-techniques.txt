@@ -1,0 +1,9 @@
+Podsumowanie: Merge vs. Rebase w Git
+
+W Git istnieją dwie główne techniki łączenia gałęzi: merge i rebase.
+
+Merge tworzy nowy commit scalający zmiany z dwóch gałęzi. Jest prosty i bezpieczny, ponieważ nie modyfikuje istniejącej historii commitów. Dzięki temu dobrze sprawdza się w pracy zespołowej, gdzie ważne jest zachowanie pełnego zapisu zmian. Minusem jest powstawanie dodatkowych commitów merge, które mogą zaciemniać historię.
+
+Rebase przenosi commity na najnowszą wersję main, sprawiając, że historia pozostaje liniowa i bardziej czytelna. Jest przydatny w indywidualnej pracy nad funkcjonalnościami, gdzie zależy nam na schludnej historii zmian. Rebase nie powinien być stosowany na współdzielonych gałęziach, ponieważ przepisywanie historii może powodować problemy z synchronizacją.
+
+Podsumowując, merge jest lepszy do integracji zmian w zespołach, a rebase do utrzymania czystej historii commitów przed scaleniem gałęzi do main.
