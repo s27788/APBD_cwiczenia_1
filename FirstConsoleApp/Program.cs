@@ -9,15 +9,15 @@ class Program
         Console.WriteLine($"Średnia: {average}");
 
         // New method -> feature-max
-        int[] numbers = { 5, 10, 20, 100, 15, 25 };
-        int maxValue = FindMaxValue(numbers);
+        int[] values = { 5, 10, 20, 100, 15, 25 };
+        int maxValue = FindMaxValue(values);
         Console.WriteLine($"Maksymalna wartość: {maxValue}");
     }
 
-    static int FindMaxValue(int[] numbers)
+    static int FindMaxValue(int[] values)
     {
-        int max = numbers[0]; // indeks 0 jako początkowa wartość
-        foreach (int num in numbers)
+        int max = values[0]; // indeks 0 jako początkowa wartość
+        foreach (int num in values)
         {
             if (num > max)
             {
